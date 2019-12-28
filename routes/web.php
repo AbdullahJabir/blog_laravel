@@ -19,3 +19,11 @@ Route::get('/post', function () {
     return view('user.layouts.post');
 })->name('post');
 
+
+Route::get('admin/home', function () {
+    return view('admin.home');
+});
+
+Route::get('admin/post', function () {
+    return view('admin.post.post');
+});
