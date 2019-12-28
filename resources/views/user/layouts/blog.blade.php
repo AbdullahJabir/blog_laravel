@@ -1,5 +1,7 @@
 @extends('user.layouts.app')
-
+@section('bg_img',asset('user/img/home-bg.jpg'))
+@section('title','Clean Blog')
+@section('sub_title','A Clean Blog Theme by Start Bootstrap')
 @section('main_content')
 
 
@@ -8,7 +10,7 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-preview">
-                    <a href="post.html">
+                    <a href="{{route('post')}}">
                         <h2 class="post-title">
                             Man must explore, and this is exploration at its greatest
                         </h2>

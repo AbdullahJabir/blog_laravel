@@ -12,9 +12,10 @@
 */
 
 Route::get('/', function () {
-    return view('user.home');
+    return view('user.layouts.blog');
 });
 
 Route::get('/post', function () {
     return view('user.layouts.post');
-});
+})->name('post');
+
