@@ -2,8 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Model\user\category;
+use App\Model\user\post;
+use App\Model\user\tag;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CategoryController extends Controller
 {
