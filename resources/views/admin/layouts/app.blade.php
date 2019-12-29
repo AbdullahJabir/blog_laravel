@@ -7,6 +7,7 @@
 <div class="wrapper">
 	@include('admin.layouts.header')
 	@include('admin.layouts.sidebar')
+	
 	@section('main_content')
 		@show
 	@include('admin.layouts.footer')

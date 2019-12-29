@@ -28,10 +28,10 @@
         <li class="active treeview">
           
           <ul class="treeview-menu">
-            <li><a href="index.html"><i class="fa fa-circle-o"></i> Posts</a></li>
-            <li class="active"><a href="index2.html"><i class="fa fa-circle-o"></i> Categories</a></li>
-            <li><a href="index.html"><i class="fa fa-circle-o"></i> Tags</a></li>
-            <li><a href="index.html"><i class="fa fa-circle-o"></i> Users</a></li>
+            <li><a href="{{route('post.index')}}"><i class="fa fa-circle-o"></i> Posts</a></li>
+            <li class="active"><a href="{{route('category.index')}}"><i class="fa fa-circle-o"></i> Categories</a></li>
+            <li><a href="{{route('tag.index')}}"><i class="fa fa-circle-o"></i> Tags</a></li>
+            <li><a href="{{route('user.index')}}"><i class="fa fa-circle-o"></i> Users</a></li>
           </ul>
         </li>
         <li class="treeview">

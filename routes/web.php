@@ -10,20 +10,27 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::group(['namespace' => 'User'],function(){
+Route::get('/','HomeController@index');
+Route::get('/post','PostController@index')->name('post');;
 
-Route::get('/', function () {
-    return view('user.layouts.blog');
 });
 
-Route::get('/post', function () {
-    return view('user.layouts.post');
-})->name('post');
 
+/*Admin Route*/
+Route::group(['namespace' => 'Admin'],function(){
 
-Route::get('admin/home', function () {
-    return view('admin.home');
-});
+Route::get('admin/home','HomeController@index')->name('admin.home');
 
-Route::get('admin/post', function () {
-    return view('admin.post.post');
+// Users Routes
+Route::resource('admin/user','UserController');
+
+//Post Route
+Route::resource('admin/post','PostController');
+
+//Tag Route
+Route::resource('admin/tag','TagController');
+
+//Category Route
+Route::resource('admin/category','CategoryController');
 });
